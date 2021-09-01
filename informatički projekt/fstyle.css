@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
+:root {
+    --fontFamily: 'Roboto Condensed', sans-serif;
+    --fontSize: 16px;
+    --red: #e62429;
+    --gray: #202020;
+    --transition: .4s ease;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    font-family: var(--fontFamily);
+    font-size: var(--fontSize);
+    letter-spacing: 1px;
+    color: #fff;
+    line-height: 2;
+    background-color: var(--gray);
+
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 100;
+}
+h1 {
+    font-weight: bolder;
+    color: #e2c7c8;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.container::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+ul {
+    list-style: none;
+}
+a {
+    color: var(--white) !important;
+    text-decoration: none;
+    
+}
+header {    
+    background-image: url("photos_space_infrared_PIA21073.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;       
+}
+nav {
+    padding: 20px 0;
+}
+nav .logo{
+    float: left;
+}
+nav ul {
+    float: right;    
+}
+nav a:hover {
+    color: gray !important;
+    transition: var(--transition);
+    transform: scale(1.1);
+    display: block;
+    text-decoration: none;
+}
+nav ul li{
+    text-decoration: none;
+    float: left;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin: 0 30px;
+    
+}
+nav ul li:last-child {
+    margin-right: 0;
+    
+}
+
+footer {
+    background-color:rgb(49, 47, 47);
+    padding: 20px 0;
+    color: white;
+}
+#treci {
+    text-align: center;    
+}
+#treci p span{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 0 20px;
+    margin: 0 20px;
+}
+.filmovi {
+    background-color: var(--gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: center;
+
+}
+.filmovi h5{
+    padding: 10px;
+    font-weight: bolder;
+
+}
+.filmovi h6{
+    padding-bottom: 10px;
+}
+
+.slika {
+    width: 240px;
+    height: 340px;
+}
+button {
+    padding: 10px 15px;
+    background: var(--red);
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    transition: var(--transition);
+    border-radius: 30px;
+}
+button:hover {
+    background: black ;
+}
+.gumb {
+    display: flex;
+    justify-content: center;
+    
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel | Službena stranica za Marvel</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="sstyle.css" />
+    
+</head>
+<body>
+
+    <div class="container-fluid">
+
+            <header>
+                <nav class="container">
+                    <div class="logo"><a href="index.html"><img src="marvel.png" alt="logo"></a></div>
+                    <ul>
+                        <li> <a href="onama.html">o nama</a></li>
+                        <li> <a href="filmovi.html">filmovi</a></li>
+                        <li> <a href="serije.html">tv shows</a></li>
+                        <li> <a href="stripovi.html">stripovi</a></li>
+                        <li> <a href="prijava.html">prijavi se</a></li>
+                    </ul> 
+                </nav>      
+            
+            </header>
+
+            <br><br><br>
+
+            <div class="prijavaa">
+                    <h1>
+                        KREIRAJTE SVOJ KORISNIČKI RAČUN:
+                    </h1>
+                    <h4>
+                        Postanite član marvelovog tima.
+                    </h4>
+            </div>
+            <br>
+            <div class="container-fluid">
+                <div class="formdiv">
+                    <form class="form-inline" action="/action_page.php">
+                        <label for="email" class="mr-sm-2">Email adresa:</label>
+                        <input type="email" class="form-control mb-2 mr-sm-2" placeholder="Unesi email" id="email">
+                        <label for="pwd" class="mr-sm-2">Lozinka:</label>
+                        <input type="password" class="form-control mb-2 mr-sm-2" placeholder="Unesi lozinku" id="pwd">
+                        <div class="form-check mb-2 mr-sm-2">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"> Zapamti me
+                        </label>
+                        </div>
+                        <button type="submit" onclick="prijava()"><a href="prijava.html">Prijavi se</a></button>
+                        
+                    </form></div>
+            </div>
+            
+            
+        <br><br><br>
+
+            <footer>
+                    <!-- <ul>
+                        <li>
+                            <div id="prvi"><p>Želiš postat član Marvelova tima? <br> <a href="">Učlani se!</a></p></div>
+                        </li>
+                        <li>
+                            <div id="drugi"><p>Zaprati Marvel na društvenim mrežama:</p></div>
+                        </li>
+                    </ul>
+                    <br> -->
+                    <div id="treci"><p>&copy;2021 MARVEL. All rights reserved. <span>FPMOZ</span> Informatički projekt 1 </p></div>
+
+            </footer>
+
+            <script>
+
+                function prijava() {
+                    var email = document.getElementById("email");
+                    for (var i = 0; i<email.value.length; i+=1) {
+                        if (email[i].indexOf("@") > 0) {
+                            alert("Uspješno ste unijeli mail.");
+                        } else {
+                            alert("Niste dobro unijeli mail.");
+                            break
+                        }
+                    }
+                }
+
+            </script>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+     
+</body>
+</html>
